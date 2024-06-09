@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+        }
+        .weather-info {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Forecast</h1>
+        <div class="weather-info">
+            <h2>Current Weather</h2>
+            <p><strong>Location:</strong> <span id="location">Loading...</span></p>
+            <p><strong>Temperature:</strong> <span id="temperature">Loading...</span></p>
+            <p><strong>Condition:</strong> <span id="condition">Loading...</span></p>
+        </div>
+    </div>
+
+    <script>
+        // Mock data for demonstration
+        var location = "New York";
+        var temperature = "25°C";
+        var condition = "Partly Cloudy";
+
+        // Display data
+        document.getElementById("location").textContent = location;
+        document.getElementById("temperature").textContent = temperature;
+        document.getElementById("condition").textContent = condition;
+    </script>
+</body>
+</html>
