@@ -4,23 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Forecast</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            text-align: center;
-        }
-        .weather-info {
-            margin-top: 50px;
-        }
-    </style>
+    <link rel="stylesheet" src="style.css" >
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
+    <div class = "containter">
+        <form id = "searchCity">
+            <div class="form-group">
+                <label for="city"> City </label>
+                <input type="text" id="city" name="city" required>
+            </div>
+            <button type="submit"> SUBMIT </button>
+        </form>
+    </div>
     <div class="container">
         <h1>Weather Forecast</h1>
         <div class="weather-info">
@@ -31,16 +28,5 @@
         </div>
     </div>
 
-    <script>
-        // Mock data for demonstration
-        var location = "New York";
-        var temperature = "25°C";
-        var condition = "Partly Cloudy";
-
-        // Display data
-        document.getElementById("location").textContent = location;
-        document.getElementById("temperature").textContent = temperature;
-        document.getElementById("condition").textContent = condition;
-    </script>
 </body>
 </html>
