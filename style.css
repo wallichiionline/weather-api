@@ -3,11 +3,43 @@ body {
     margin: 0;
     padding: 0;
 }
+
 .container {
     width: 80%;
     margin: auto;
     text-align: center;
 }
+
 .weather-info {
     margin-top: 50px;
+}
+
+.header {
+    text-align: center;
+}
+
+body {
+    background-color: darkblue;
+    color:white;
+}
+
+.card {
+    color: blue;
+    background-color: cyan;
+}
+
+#history.ul {
+    list-style-type: none;
+}
+
+.list-group-item {
+    background-color: aquamarine;
+    margin-top: 5px;
+    border-radius: 3px;
+}
+
+.list-group-item:hover {
+    background-color: aqua;
+    cursor: pointer;
+    border: 1px solid black;
 }
